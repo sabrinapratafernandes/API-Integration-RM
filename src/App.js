@@ -53,6 +53,7 @@ function App() {
     <main className='flex flex-col items-center'> 
     <Banner/>
     <SearchInput value={search} onChange={setSearch} />
+    <p className='text-center text-sm p-2 md:text-lg'>Clique em um personagem para ver mais informações</p>
     <PrincipalContent searchData={searchData} toggleTableVisibility={toggleTableVisibility} visibleTable={visibleTable}/>
     <div className='w-full flex justify-center'>
       <Button label="Página Anterior" onClick={prevPage} />
