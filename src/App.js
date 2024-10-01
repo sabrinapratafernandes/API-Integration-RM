@@ -49,9 +49,7 @@ function App() {
   };
   
   return (
-    <div className=''>
-    <header className='bg-blue'> 
-    </header>
+    <div className='App'>
     <main className='flex flex-col items-center'> 
     <Banner/>
     <SearchInput value={search} onChange={setSearch} />
@@ -61,7 +59,8 @@ function App() {
       <Button label="Próxima Página" onClick={nextPage} />
     </div>
     </main>
-    <footer>
+    <footer className='bg-purple w-full h-16 flex items-center justify-center mt-4'>
+      <p className='text-lg md:text-xl text-white'>Desenvolvido por: Sabrina B. P. Fernandes</p>
     </footer>
     </div>
   );
